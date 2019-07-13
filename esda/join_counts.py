@@ -43,6 +43,10 @@ class Join_Counts(object):
                    number of white-white joins
     bw           : float
                    number of black-white joins
+    autocorr_neg : float
+                   number of negatively correlated joins
+    autocorr_pos : float
+                   number of positively correlated joins
     J            : float
                    number of joins
     sim_bb       : array
@@ -105,6 +109,10 @@ class Join_Counts(object):
     4.0
     >>> jc.ww
     10.0
+    >>> jc.autocorr_pos
+    4.0
+    >>> jc.autocorr_neg
+    20.0
     >>> jc.J
     24.0
     >>> len(jc.sim_bb)
